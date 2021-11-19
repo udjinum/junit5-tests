@@ -43,9 +43,9 @@ public class DegreeHouseTest extends TestBase {
     @Tag("Blocker")
     @DisplayName("Checking headings on product cards on the website")
     @CsvSource(value = {
-            "Oregon : Самогонный аппарат Oregon",
-            "Wagner : Самогонный аппарат Wagner"
-    }, delimiter = ':')
+            "Oregon . Самогонный аппарат Oregon",
+            "Wagner . Самогонный аппарат Wagner"
+    }, delimiter = '.')
     public void findProductsOnSiteWithCsvSourceTest(String brand, String expectedResult) {
         productPage
                 .openPage()
